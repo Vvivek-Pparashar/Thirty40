@@ -4,14 +4,17 @@ import { Link } from "react-router-dom";
 const SpecialOffer = () => {
   return (
     <div>
-      <div className="container-fluid bg-offer py-5" style={{backgroundAttachment:"fixed"}}>
+      <div
+        className="container-fluid bg-offer py-5"
+        style={{ backgroundAttachment: "fixed" }}
+      >
         <div className="container py-5">
           <div className="row gx-5 justify-content-start">
             <div className="col-lg-7">
-              <div className="border-start border-5 border-dark ps-5 mb-5">
-                <h6 className="text-dark text-uppercase">Special Offer</h6>
+              <div className="border-start border-5 border-primary ps-5 mb-5">
+                {/* <h6 className="text-dark text-uppercase">Hurry-up</h6> */}
                 <h1 className="display-5 text-uppercase text-white mb-0">
-                  Save 50% on all items your first order
+                  LIMITED SLOTS AVAILABLE HURRY UP!
                 </h1>
               </div>
               <p className="text-white mb-4">
@@ -21,11 +24,11 @@ const SpecialOffer = () => {
                 ut dolores magna sit. Sea dolore sed et.
               </p>
               <Link to="#" className="btn btn-light py-md-3 px-md-5 me-3">
-                Shop Now
+                Enquire Now
               </Link>
-              <Link to="#" className="btn btn-outline-light py-md-3 px-md-5">
+              {/* <Link to="#" className="btn btn-outline-light py-md-3 px-md-5">
                 Read More
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

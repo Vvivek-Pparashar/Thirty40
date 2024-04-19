@@ -283,6 +283,8 @@
 .bg-offer {
     background: url(../../public/img/offer.jpg) top right no-repeat;
     background-size: cover;
+    background-repeat: repeat;
+    background-position: 40% 90%;
 }
 
 .price-carousel::after {
