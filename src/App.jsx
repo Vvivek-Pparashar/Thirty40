@@ -20,8 +20,8 @@ const App = () => {
       <Services />
       <TeamMember />
       <SpecialOffer />
-      <LatestBlogs />
       <Testimonial/>
+      <LatestBlogs />
       <Footer />
       <FloatingWhatsApp/>
       <ScrollRestoration/>

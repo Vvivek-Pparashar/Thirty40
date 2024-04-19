@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavBar = ({page}) => {
+const NavBar = ({ page }) => {
   return (
     <div>
       <div className="container-fluid border-bottom d-none d-lg-block">
@@ -52,47 +52,29 @@ const NavBar = ({page}) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
-            <Link to="/" 
-            // className="nav-item nav-link active" 
-            className = {`${page == "Home" ? "active" : ""} nav-item nav-link`}
+            <Link
+              to="/"
+              className={`${page == "Home" ? "active" : ""} nav-item nav-link`}
             >
               Home
             </Link>
             <Link to="/About" className="nav-item nav-link">
               About
             </Link>
-            <Link to="/Blog" className="nav-item nav-link">
+            <Link to="/" className="nav-item nav-link">
               Service
             </Link>
             <Link to="/" className="nav-item nav-link">
               Product
             </Link>
-            <div className="nav-item dropdown">
-              <Link
-                to="/"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                Pages
-              </Link>
-              <div className="dropdown-menu m-0">
-                <Link to="/" className="dropdown-item">
-                  Pricing Plan
-                </Link>
-                <Link to="/" className="dropdown-item">
-                  The Team
-                </Link>
-                <Link to="/" className="dropdown-item">
-                  Testimonial
-                </Link>
-                <Link to="/" className="dropdown-item">
-                  Blog Grid
-                </Link>
-                <Link to="/" className="dropdown-item">
-                  Blog Detail
-                </Link>
-              </div>
-            </div>
+
+            <Link
+              to="/Blog"
+              className={`${page == "Blog" ? "active" : ""} nav-item nav-link`}
+            >
+              Blogs
+            </Link>
+
             <Link
               to="/contact"
               className="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5"

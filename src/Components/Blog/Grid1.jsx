@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Grid1 = () => {
   return (
@@ -32,7 +33,7 @@ const Grid1 = () => {
                       Ipsum sed lorem amet dolor amet duo ipsum amet et dolore
                       est stet tempor eos dolor
                     </p>
-                    <Link className="text-primary text-uppercase" href="">
+                    <Link className="text-primary text-uppercase" to="/Blog">
                       Read More<i className="bi bi-chevron-right"></i>
                     </Link>
                   </div>
@@ -65,7 +66,7 @@ const Grid1 = () => {
                       Ipsum sed lorem amet dolor amet duo ipsum amet et dolore
                       est stet tempor eos dolor
                     </p>
-                    <Link className="text-primary text-uppercase" href="">
+                    <Link className="text-primary text-uppercase" to="/Blog">
                       Read More<i className="bi bi-chevron-right"></i>
                     </Link>
                   </div>
@@ -98,7 +99,7 @@ const Grid1 = () => {
                       Ipsum sed lorem amet dolor amet duo ipsum amet et dolore
                       est stet tempor eos dolor
                     </p>
-                    <Link className="text-primary text-uppercase" href="">
+                    <Link className="text-primary text-uppercase" to="/Blog">
                       Read More<i className="bi bi-chevron-right"></i>
                     </Link>
                   </div>
@@ -131,7 +132,7 @@ const Grid1 = () => {
                       Ipsum sed lorem amet dolor amet duo ipsum amet et dolore
                       est stet tempor eos dolor
                     </p>
-                    <Link className="text-primary text-uppercase" href="">
+                    <Link className="text-primary text-uppercase" to="/Blog">
                       Read More<i className="bi bi-chevron-right"></i>
                     </Link>
                   </div>
@@ -164,7 +165,7 @@ const Grid1 = () => {
                       Ipsum sed lorem amet dolor amet duo ipsum amet et dolore
                       est stet tempor eos dolor
                     </p>
-                    <Link className="text-primary text-uppercase" href="">
+                    <Link className="text-primary text-uppercase" to="/Blog">
                       Read More<i className="bi bi-chevron-right"></i>
                     </Link>
                   </div>
@@ -197,7 +198,7 @@ const Grid1 = () => {
                       Ipsum sed lorem amet dolor amet duo ipsum amet et dolore
                       est stet tempor eos dolor
                     </p>
-                    <Link className="text-primary text-uppercase" href="">
+                    <Link className="text-primary text-uppercase" to="/Blog">
                       Read More<i className="bi bi-chevron-right"></i>
                     </Link>
                   </div>
@@ -210,8 +211,8 @@ const Grid1 = () => {
                   <li className="page-item disabled">
                     <Link
                       className="page-link rounded-0"
-                      href="#"
-                      aria-label="Previous"
+                      to="/Blog"
+                      //   aria-label="Previous"
                     >
                       <span aria-hidden="true">
                         <i className="bi bi-arrow-left"></i>
@@ -219,25 +220,25 @@ const Grid1 = () => {
                     </Link>
                   </li>
                   <li className="page-item active">
-                    <Link className="page-link" href="#">
+                    <Link className="page-link" to="/Blog">
                       1
                     </Link>
                   </li>
                   <li className="page-item">
-                    <Link className="page-link" href="#">
+                    <Link className="page-link" to="/Blog">
                       2
                     </Link>
                   </li>
                   <li className="page-item">
-                    <Link className="page-link" href="#">
+                    <Link className="page-link" to="/Blog">
                       3
                     </Link>
                   </li>
                   <li className="page-item">
                     <Link
                       className="page-link rounded-0"
-                      href="#"
-                      aria-label="Next"
+                      to="/Blog"
+                      //   aria-label="Next"
                     >
                       <span aria-hidden="true">
                         <i className="bi bi-arrow-right"></i>
@@ -268,19 +269,19 @@ const Grid1 = () => {
                 Categories
               </h3>
               <div className="d-flex flex-column justify-content-start">
-                <Link className="h5 bg-light py-2 px-3 mb-2" href="#">
+                <Link className="h5 bg-light py-2 px-3 mb-2" to="/Blog">
                   <i className="bi bi-arrow-right me-2"></i>Web Design
                 </Link>
-                <Link className="h5 bg-light py-2 px-3 mb-2" href="#">
+                <Link className="h5 bg-light py-2 px-3 mb-2" to="/Blog">
                   <i className="bi bi-arrow-right me-2"></i>Web Development
                 </Link>
-                <Link className="h5 bg-light py-2 px-3 mb-2" href="#">
+                <Link className="h5 bg-light py-2 px-3 mb-2" to="/Blog">
                   <i className="bi bi-arrow-right me-2"></i>Web Development
                 </Link>
-                <Link className="h5 bg-light py-2 px-3 mb-2" href="#">
+                <Link className="h5 bg-light py-2 px-3 mb-2" to="/Blog">
                   <i className="bi bi-arrow-right me-2"></i>Keyword Research
                 </Link>
-                <Link className="h5 bg-light py-2 px-3 mb-2" href="#">
+                <Link className="h5 bg-light py-2 px-3 mb-2" to="/Blog">
                   <i className="bi bi-arrow-right me-2"></i>Email Marketing
                 </Link>
               </div>
@@ -302,7 +303,7 @@ const Grid1 = () => {
                   alt=""
                 />
                 <Link
-                  href=""
+                  to="/Blog"
                   className="h5 d-flex align-items-center bg-light px-3 mb-0"
                 >
                   Lorem ipsum dolor sit amet adipis elit
@@ -320,25 +321,7 @@ const Grid1 = () => {
                   alt=""
                 />
                 <Link
-                  href=""
-                  className="h5 d-flex align-items-center bg-light px-3 mb-0"
-                >
-                  Lorem ipsum dolor sit amet adipis elit
-                </Link>
-              </div>
-              <div className="d-flex overflow-hidden mb-3">
-                <img
-                  className="img-fluid"
-                  src="img/blog-3.jpg"
-                  style={{
-                    width: 100 + "px",
-                    height: 100 + "px",
-                    objectFit: "cover",
-                  }}
-                  alt=""
-                />
-                <Link
-                  href=""
+                  to="/Blog"
                   className="h5 d-flex align-items-center bg-light px-3 mb-0"
                 >
                   Lorem ipsum dolor sit amet adipis elit
@@ -356,7 +339,7 @@ const Grid1 = () => {
                   alt=""
                 />
                 <Link
-                  href=""
+                  to="/Blog"
                   className="h5 d-flex align-items-center bg-light px-3 mb-0"
                 >
                   Lorem ipsum dolor sit amet adipis elit
@@ -374,7 +357,25 @@ const Grid1 = () => {
                   alt=""
                 />
                 <Link
-                  href=""
+                  to="/Blog"
+                  className="h5 d-flex align-items-center bg-light px-3 mb-0"
+                >
+                  Lorem ipsum dolor sit amet adipis elit
+                </Link>
+              </div>
+              <div className="d-flex overflow-hidden mb-3">
+                <img
+                  className="img-fluid"
+                  src="img/blog-1.jpg"
+                  style={{
+                    width: 100 + "px",
+                    height: 100 + "px",
+                    objectFit: "cover",
+                  }}
+                  alt=""
+                />
+                <Link
+                  to="/Blog"
                   className="h5 d-flex align-items-center bg-light px-3 mb-0"
                 >
                   Lorem ipsum dolor sit amet adipis elit
@@ -391,40 +392,40 @@ const Grid1 = () => {
                 Tag Cloud
               </h3>
               <div className="d-flex flex-wrap m-n1">
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Design
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Development
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Marketing
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   SEO
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Writing
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Consulting
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Design
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Development
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Marketing
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   SEO
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Writing
                 </Link>
-                <Link href="" className="btn btn-primary m-1">
+                <Link to="/Blog" className="btn btn-primary m-1">
                   Consulting
                 </Link>
               </div>
@@ -444,7 +445,7 @@ const Grid1 = () => {
                   sea ut tempor magna takimata, amet sit et diam dolor ipsum
                   amet diam
                 </p>
-                <Link href="" className="btn btn-primary py-2 px-4">
+                <Link to="/Blog" className="btn btn-primary py-2 px-4">
                   Read More
                 </Link>
               </div>

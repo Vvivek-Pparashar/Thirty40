@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const SpecialOffer = () => {
   return (
     <div>
-      <div className="container-fluid bg-offer my-5 py-5">
+      <div className="container-fluid bg-offer py-5" style={{backgroundAttachment:"fixed"}}>
         <div className="container py-5">
           <div className="row gx-5 justify-content-start">
             <div className="col-lg-7">

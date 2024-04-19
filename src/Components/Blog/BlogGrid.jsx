@@ -8,7 +8,7 @@ import { ScrollRestoration } from 'react-router-dom'
 const BlogGrid = () => {
   return (
     <div>
-        <NavBar page={"BlogGrid"}/>
+        <NavBar page={"Blog"}/>
         <Grid1/>
         <Footer/>
         <FloatingWhatsApp/>
