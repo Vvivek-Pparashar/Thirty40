@@ -9,23 +9,23 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
-  {
-    path: "/contact",
-    element: <ContactUs />,
-  },
+  // {
+  //   path: "/contact",
+  //   element: <ContactUs />,
+  // },
   // {
   //   path: "/About",
   //   element: <ContactUs />,
   // },
-  {
-    path: "/Blog",
-    element: <BlogGrid/>,
-  },
+  // {
+  //   path: "/Blog",
+  //   element: <BlogGrid/>,
+  // },
 
-  {
-    path: "/Blog1",
-    element: <Blog1/>,
-  },
+  // {
+  //   path: "/Blog1",
+  //   element: <Blog1/>,
+  // },
 ]);
 
 export default router;
