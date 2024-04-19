@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const AboutUs = () => {
+  const [user, setUser] = useState(1);
   return (
     <div>
       <div className="container-fluid py-5">
@@ -37,7 +38,7 @@ const AboutUs = () => {
                 >
                   <li className="nav-item w-50" role="presentation">
                     <button
-                      className="nav-link text-uppercase w-100 active"
+                      className={`nav-link text-uppercase w-100 ${user == 1 ? "active" : ""}`}
                       id="pills-1-tab"
                       data-bs-toggle="pill"
                       data-bs-target="#pills-1"
@@ -45,13 +46,14 @@ const AboutUs = () => {
                       role="tab"
                       aria-controls="pills-1"
                       aria-selected="true"
+                      onClick={()=>setUser(1)}
                     >
                       Our Mission
                     </button>
                   </li>
                   <li className="nav-item w-50" role="presentation">
                     <button
-                      className="nav-link text-uppercase w-100"
+                      className={`nav-link text-uppercase w-100 ${user == 2 ? "active" : ""}`}
                       id="pills-2-tab"
                       data-bs-toggle="pill"
                       data-bs-target="#pills-2"
@@ -59,6 +61,7 @@ const AboutUs = () => {
                       role="tab"
                       aria-controls="pills-2"
                       aria-selected="false"
+                      onClick={()=>setUser(2)}
                     >
                       Our Vission
                     </button>
@@ -66,7 +69,7 @@ const AboutUs = () => {
                 </ul>
                 <div className="tab-content" id="pills-tabContent">
                   <div
-                    className="tab-pane fade show active"
+                    className={`tab-pane fade show ${user == 1 ? "active":""}`}
                     id="pills-1"
                     role="tabpanel"
                     aria-labelledby="pills-1-tab"
@@ -83,13 +86,13 @@ const AboutUs = () => {
                     </p>
                   </div>
                   <div
-                    className="tab-pane fade"
+                     className={`tab-pane fade show ${user == 2 ? "active":""}`}
                     id="pills-2"
                     role="tabpanel"
                     aria-labelledby="pills-2-tab"
                   >
                     <p className="mb-0">
-                      Tempor erat elitr at rebum at at clita aliquyam
+                       erat elitr at rebum at at clita aliquyam
                       consetetur. Diam dolor diam ipsum et, tempor voluptua sit
                       consetetur sit. Aliquyam diam amet diam et eos sadipscing
                       labore. Clita erat ipsum et lorem et sit, sed stet no

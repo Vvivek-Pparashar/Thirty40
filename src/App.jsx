@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/Footer";
 import { ScrollRestoration } from "react-router-dom";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Testimonial from "./Components/MainPage/Testimonial";
+import OurCenter from "./Components/MainPage/OurCenter";
 
 const App = () => {
   return (
@@ -18,13 +19,14 @@ const App = () => {
       <HeroPage />
       <AboutUs />
       <Services />
+      <OurCenter/>
       <TeamMember />
       <SpecialOffer />
       <Testimonial/>
       <LatestBlogs />
       <Footer />
       <FloatingWhatsApp/>
-      <ScrollRestoration/>
+      {/* <ScrollRestoration/> */}
     </>
   );
 };

@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const HeroPage = () => {
+  const [navBg, setNavBg] = useState(false);
+
+  const changeNavBg = () => {
+    window.scrollY >= 90 ? setNavBg(true) : setNavBg(false);
+  };
+
+  window.addEventListener("scroll", changeNavBg);
   return (
     <div>
       <div className="container-fluid bg-primary py-5 mb-5 hero-header">
         <div className="container py-5">
-          <div className="row justify-content-start">
+          <div className="row justify-content-start" style={{paddingTop: navBg ? "40px" : "0px"}}>
             <div className="col-lg-8 text-center text-lg-start">
               <h1 className="display-1 text-uppercase mb-lg-4" style={{color:"#cfff95"}}>
                 Welcome

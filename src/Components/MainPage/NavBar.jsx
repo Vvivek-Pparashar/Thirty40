@@ -1,7 +1,15 @@
-import React from "react";
+import { RampRight, Widgets } from "@mui/icons-material";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = ({ page }) => {
+  const [navBg, setNavBg] = useState(false);
+
+  const changeNavBg = () => {
+    window.scrollY >= 90 ? setNavBg(true) : setNavBg(false);
+  };
+
+  window.addEventListener("scroll", changeNavBg);
   return (
     <div>
       <div className="container-fluid border-bottom d-none d-lg-block">
@@ -36,7 +44,14 @@ const NavBar = ({ page }) => {
         </div>
       </div>
 
-      <nav className="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+      <nav
+        className={`navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0 ${
+          navBg ? "sticky-top" : ""
+        }`}
+
+       style={ { position : navBg ? "fixed" : "", top:"0", left:"0", right:"0"}}
+        // style={{ position :"fixed", top:"0", left:"0"}}
+      >
         <Link to="/" className="navbar-brand ms-lg-5">
           <h1 className="m-0 text-uppercase text-dark">
             <i className="bi bi-shop fs-1 text-primary me-3"></i>Thirty40

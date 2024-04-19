@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import SportsBasketballOutlinedIcon from "@mui/icons-material/SportsBasketballOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
-import FitnessCenterOutlinedIcon from "@mui/icons-material/FitnessCenterOutlined";
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
 import DirectionsBikeOutlinedIcon from "@mui/icons-material/DirectionsBikeOutlined";
 import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
@@ -40,10 +38,6 @@ const List = [
       <EmojiEventsOutlinedIcon style={{ color: "#FFBB2C" }} fontSize="large" />
     ),
   },
-  // {
-  //   heading: "Fitness for Everyone",
-  //   icon: <FitnessCenterOutlinedIcon/>,
-  // },
   {
     heading: "Athletic & Academic Scholarships",
     icon: <SchoolOutlinedIcon style={{ color: "black" }} fontSize="large" />,
@@ -68,7 +62,6 @@ const List = [
 
 const Services = () => {
   return (
-    <div>
       <div className="container-fluid py-5">
         <div className="container">
           <div
@@ -84,11 +77,10 @@ const Services = () => {
             {List.map((e) => (
               <ServicesList heading={e.heading} icon={e.icon} />
             ))}
-            {/* <ServicesList/> */}
+            
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
