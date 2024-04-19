@@ -1,10 +1,10 @@
 import React from "react";
-import sn1 from "../../assets/gurugram.jpeg";
-import sn2 from "../../assets/delhi.jpeg";
-import sn3 from "../../assets/spain.jpeg";
-import sn4 from "../../assets/mzn.jpeg";
-import WestOutlinedIcon from '@mui/icons-material/WestOutlined';
-import EastIcon from '@mui/icons-material/East';;
+import sn1 from "../../../public/img/gurugram.jpeg";
+import sn2 from "../../../public/img/delhi.jpeg";
+import sn3 from "../../../public/img/spain.jpeg";
+import sn4 from "../../../public/img/mzn.jpeg";
+import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
+import EastIcon from "@mui/icons-material/East";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -108,10 +108,18 @@ const OurCenter = () => {
 
           <div className="slider-controler-startups">
             <div className="swiper-button-prev slider-arrow-startups">
-              <WestOutlinedIcon color="white" style={{ color: "white" }} sx={{fontSize:10}} />
+              <WestOutlinedIcon
+                color="white"
+                style={{ color: "white" }}
+                sx={{ fontSize: 10 }}
+              />
             </div>
             <div className="swiper-button-next slider-arrow-startups">
-              <EastIcon color="white" style={{ color: "white" }} sx={{fontSize:10}}/>
+              <EastIcon
+                color="white"
+                style={{ color: "white" }}
+                sx={{ fontSize: 10 }}
+              />
             </div>
           </div>
         </Swiper>

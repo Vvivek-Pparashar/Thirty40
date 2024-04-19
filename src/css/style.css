@@ -113,7 +113,7 @@
 }
 
 .hero-header {
-    /* background: url("../assets/Hero.jpg") top right no-repeat; */
+    background: url("../../../public/img/Hero.jpg") top right no-repeat;
     background-size: cover;
 }
 
@@ -281,7 +281,7 @@
 }
 
 .bg-offer {
-    background: url(../img/offer.jpg) top right no-repeat;
+    background: url(../../public/img/offer.jpg) top right no-repeat;
     background-size: cover;
 }
 
@@ -386,7 +386,7 @@
 }
 
 .bg-testimonial {
-    background: url(../img/testimonial.png) top left no-repeat;
+    background: url(../../public/img/testimonial.jpg) top left no-repeat;
     /* background-size: cover; */
 }
 
