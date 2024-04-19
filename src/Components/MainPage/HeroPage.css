@@ -1,0 +1,4 @@
+.hero-header {
+    background: url("../../assets/Hero.jpg") top right no-repeat;
+    background-size: cover;
+}

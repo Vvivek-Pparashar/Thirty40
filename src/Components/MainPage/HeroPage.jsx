@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './HeroPage.css'
 
 const HeroPage = () => {
   const [navBg, setNavBg] = useState(false);

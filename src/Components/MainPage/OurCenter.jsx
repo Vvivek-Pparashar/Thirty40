@@ -1,8 +1,8 @@
 import React from "react";
-import sn1 from "../../assets/img/gurugram.jpeg";
-import sn2 from "../../assets/img/delhi.jpeg";
-import sn3 from "../../assets/img/spain.jpeg";
-import sn4 from "../../assets/img/mzn.jpeg";
+import sn1 from "../../assets/gurugram.jpeg";
+import sn2 from "../../assets/delhi.jpeg";
+import sn3 from "../../assets/spain.jpeg";
+import sn4 from "../../assets/mzn.jpeg";
 import WestOutlinedIcon from '@mui/icons-material/WestOutlined';
 import EastIcon from '@mui/icons-material/East';;
 
