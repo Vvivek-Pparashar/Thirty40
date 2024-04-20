@@ -1,4 +1,5 @@
 import React from "react";
+import sn3 from "../../../public/img/spain.jpeg";
 
 const EnquirePageForm = ({place}) => {
   return (
@@ -63,7 +64,7 @@ const EnquirePageForm = ({place}) => {
               </div>
               <div className="col-lg-5">
               <img
-                src={`../../../public/img/spain.jpeg`}
+                src={sn3}
                   style={{
                     objectFit: "cover",
                     width: "100%",
