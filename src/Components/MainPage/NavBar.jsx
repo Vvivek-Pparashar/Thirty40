@@ -95,7 +95,7 @@ const NavBar = ({ page }) => {
             </Link>
 
             <Link
-              to="/EnqireNow"
+              to="/EnquireNow"
               className="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5"
             >
               Enqire Now <i className="bi bi-arrow-right"></i>

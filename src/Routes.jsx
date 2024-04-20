@@ -5,28 +5,38 @@ import BlogGrid from "./Components/Blog/BlogGrid";
 import Blog1 from "./Components/Blog/Blog1";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Services from "./Components/Services/Services";
+import EnquireNow from "./Components/EnquireNow/EnquireNow";
+import PlaceEnquire from "./Components/EnquireNow/PlaceEnquire";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
-  // {
-  //   path: "/About",
-  //   element: <AboutUs />,
-  // },
-  // {
-  //   path: "/Services",
-  //   element: <Services />,
-  // },
-  // {
-  //   path: "/ContactUs",
-  //   element: <ContactUs />,
-  // },
-  // {
-  //   path: "/Blog",
-  //   element: <BlogGrid />,
-  // },
+  {
+    path: "/About",
+    element: <AboutUs />,
+  },
+  {
+    path: "/Services",
+    element: <Services />,
+  },
+  {
+    path: "/ContactUs",
+    element: <ContactUs />,
+  },
+  {
+    path: "/EnquireNow",
+    element: <EnquireNow />,
+  },
+  {
+    path: "/Blog",
+    element: <BlogGrid />,
+  },
+  {
+    path: "/EnquireNow/:id",
+    element: <PlaceEnquire/>,
+  },
 
   //////////Blogs Pages//////////////////
 

@@ -7,7 +7,7 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 const Blog1 = () => {
   return (
     <div>
-        <NavBar/>
+      <NavBar />
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-8">
@@ -368,9 +368,9 @@ const Blog1 = () => {
         </div>
       </div>
 
-      <Footer/>
-      <FloatingWhatsApp/>
-      <ScrollRestoration/>
+      <Footer />
+      <FloatingWhatsApp />
+      <ScrollRestoration />
     </div>
   );
 };

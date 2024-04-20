@@ -3,6 +3,8 @@ import NavBar from "../MainPage/NavBar";
 import Service from "../MainPage/Services";
 import Footer from "../Footer/Footer";
 import Consultancy from "./Consultancy";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { ScrollRestoration } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -11,6 +13,8 @@ const Services = () => {
       <Service />
       <Consultancy />
       <Footer />
+      <FloatingWhatsApp/>
+      <ScrollRestoration/>
     </div>
   );
 };
