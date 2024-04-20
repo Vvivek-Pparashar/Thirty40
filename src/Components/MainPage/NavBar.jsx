@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 
 const NavBar = ({ page }) => {
   const [navBg, setNavBg] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
+
+  console.log(mobileNav)
 
   const changeNavBg = () => {
     window.scrollY >= 90 ? setNavBg(true) : setNavBg(false);
@@ -58,14 +61,15 @@ const NavBar = ({ page }) => {
           </h1>
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler collapsed"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse"
+          onClick={()=>setMobileNav(!mobileNav)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarCollapse">
+        <div className={`collapse navbar-collapse ${mobileNav ? "show" : ""}`} id="navbarCollapse">
           <div className="navbar-nav ms-auto py-0">
             <Link
               to="/"
@@ -73,14 +77,14 @@ const NavBar = ({ page }) => {
             >
               Home
             </Link>
-            <Link to="/About" className="nav-item nav-link">
+            <Link to="/About"  className={`${page == "AboutUs" ? "active" : ""} nav-item nav-link`}>
               About
             </Link>
-            <Link to="/" className="nav-item nav-link">
-              Service
+            <Link to="/Services" className={`${page == "Services" ? "active" : ""} nav-item nav-link`}>
+              Services
             </Link>
-            <Link to="/" className="nav-item nav-link">
-              Product
+            <Link to="/ContactUs" className={`${page == "contact" ? "active" : ""} nav-item nav-link`}>
+              Contact
             </Link>
 
             <Link
@@ -91,10 +95,10 @@ const NavBar = ({ page }) => {
             </Link>
 
             <Link
-              to="/contact"
+              to="/EnqireNow"
               className="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5"
             >
-              Contact <i className="bi bi-arrow-right"></i>
+              Enqire Now <i className="bi bi-arrow-right"></i>
             </Link>
           </div>
         </div>

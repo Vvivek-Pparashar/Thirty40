@@ -70,7 +70,7 @@ const Services = () => {
           >
             <h6 className="text-primary text-uppercase">Services</h6>
             <h1 className="display-5 text-uppercase mb-0">
-              Our Excellent Services
+              Our Excellent Tennis Services
             </h1>
           </div>
           <div className="row g-5">

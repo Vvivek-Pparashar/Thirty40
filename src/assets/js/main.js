@@ -30,7 +30,7 @@
     //         });
     //     }
     // }
-    // toggleNavbarMethod();
+    toggleNavbarMethod();
     // window.addEventListener('resize', toggleNavbarMethod);
 
     // Modal Video

@@ -26,7 +26,7 @@ const App = () => {
       <LatestBlogs />
       <Footer />
       <FloatingWhatsApp/>
-      {/* <ScrollRestoration/> */}
+      <ScrollRestoration/>
     </>
   );
 };

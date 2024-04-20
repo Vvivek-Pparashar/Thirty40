@@ -1,19 +1,10 @@
 import React from "react";
-import SportsBasketballOutlinedIcon from "@mui/icons-material/SportsBasketballOutlined";
-// import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
-// import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
-// import FitnessCenterOutlinedIcon from "@mui/icons-material/FitnessCenterOutlined";
-// import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-// import DirectionsBikeOutlinedIcon from '@mui/icons-material/DirectionsBikeOutlined';
-// import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
-// import ApartmentOutlinedIcon from '@mui/icons-material/ApartmentOutlined';
-// import MilitaryTechOutlinedIcon from '@mui/icons-material/MilitaryTechOutlined';
-// import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import './Services.css'
 
 const ServicesList = ({ heading, icon }) => {
   return (
     <>
-      <div className="col-lg-6">
+      <div className="col-lg-6 shadow-effect-services">
         <div
           className="service-item bg-light d-flex p-4"
           style={{
